@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrefixedTypedIds", "PrefixedTypedIds\PrefixedTypedIds.csproj", "{98E80B1C-4733-4302-BC39-7453D19FB7BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98E80B1C-4733-4302-BC39-7453D19FB7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E80B1C-4733-4302-BC39-7453D19FB7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E80B1C-4733-4302-BC39-7453D19FB7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E80B1C-4733-4302-BC39-7453D19FB7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
