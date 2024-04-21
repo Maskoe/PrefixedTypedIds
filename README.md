@@ -1,7 +1,6 @@
 # Strongly Typed Prefixed Ids
 Sample implementation of strongly typed, prefixed id's that work with FastEndpoints, Swagger and Ef Core.
 
-## Why?
 I was getting tired of GUIDs. They're too long, too ugly for users in the url and impossible to remember for developers while debugging. \
 I like the way Stripe does it. A small prefix in an id like "cc" makes it hard to plug the wrong id into something. \
 "cc-apgd823-fjx9f23" is much better than just "apgd823-fjx9f23".
