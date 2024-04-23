@@ -35,12 +35,12 @@ var ctx = app.Services.CreateScope().ServiceProvider.GetRequiredService<Context>
 await ctx.Database.MigrateAsync();
 
 // Seed database with 5 products and credit cards
-if (!ctx.CreditCards.Any())
+if (!ctx.Products.Any())
 {
     for (int i = 0; i < 5; i++)
     {
         var prod = new Product();
-        var cc = new CreditCard();
+        var cc = new CreditCard { Person = new() };
         ctx.Products.Add(prod);
         ctx.CreditCards.Add(cc);
     }
