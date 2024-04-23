@@ -14,9 +14,9 @@ public record CreditCardId : TypedId
     protected override string prefix => "cc";
 }
 
-public class CreditCard : IHasTypedId<CreditCardId>
+public class CreditCard 
 {
-    public CreditCardId Id { get; set; } = new();
+    public CreditCardId Id { get; set; }
     public string CVC { get; set; } = "";
 }
 ```
@@ -33,13 +33,11 @@ public class CreditCard : IHasTypedId<CreditCardId>
 }
 ```
 - 4 Lines of configuration
-- EF Core Update => AddOrUpdate behaviour stays consistent. \
- (Ef cores Update method is actually AddOrUpdate behind the scenes. If you call Update(newEntity) and save, ef core checks whether the primary key is `default` and fires an `INSERT` instead.)
 
 ### Duplicate Ids
 This code does not handle duplicate id's. There are no retries, no checking before inserting.
 
-I left this piece of code in so you can experiemnt and get a feel for the likelyhood of duplicates
+I left this piece of code in so you can experiment and get a feel for the likelyhood of duplicates
 ```cs
 for (int i = 0; i < 10; i++)
 {
